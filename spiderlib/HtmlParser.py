@@ -14,7 +14,7 @@ class HtmlParser(object):
 
     def __get_new_urls(self, page_url, soup):
         new_urls = set()
-        links = soup.find_all('a', href=re.compile(r'\w+.html'))
+        links = soup.find_all('a', href=re.compile(r'\w+\.html'))
         for link in links:
             new_url = link['href']
             new_full_url = urlparse.urljoin(page_url, new_url)
