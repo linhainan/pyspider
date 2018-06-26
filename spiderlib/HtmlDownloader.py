@@ -1,5 +1,7 @@
 # coding:utf-8
 from urllib import request
+
+
 class HtmlDownloader(object):
 
     @staticmethod
